@@ -3,7 +3,7 @@ layout: ../../layouts/BlogLayout.astro
 title: Egui with WGPU + Winit
 description: Easily integrate Egui with your existing WGPU + Winit codebase
 tags: ["rust", "WGPU", "Winit", "Egui", "GUI", "open-source"]
-githubUrl: https://github.com/luigiistcrazy/wgpu-winit-egui
+time: 69
 timestamp: 2025-04-08T00:00:00+02:00
 featured: true
 filename: wgpu-winit-egui
