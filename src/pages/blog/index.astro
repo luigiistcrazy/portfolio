@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import ArticleSnippet from "../../components/ArticleSnippet.astro";
 import Section from "../../components/common/Section.astro";
 import { articles } from "../../lib/list";
+import profileImage from "../../../public/profileImage.gif"
 
 ---
 
@@ -19,7 +20,7 @@ import { articles } from "../../lib/list";
       property="og:description"
       content={GLOBAL.blogShortDescription}
     />
-    <meta property="og:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta property="og:image" content={`${GLOBAL.rootUrl}/${profileImage}`} />
     <meta property="og:url" content={`${GLOBAL.rootUrl}/blog`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${GLOBAL.blogTitle} • ${GLOBAL.username}`} />
@@ -27,7 +28,7 @@ import { articles } from "../../lib/list";
       name="twitter:description"
       content={GLOBAL.blogShortDescription}
     />
-    <meta name="twitter:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta name="twitter:image" content={`${GLOBAL.rootUrl}/${profileImage}`} />
     <meta http-equiv="content-language" content="en" />
     <meta name="language" content="English" />
     <link rel="canonical" href={`${GLOBAL.rootUrl}/blog`} />

@@ -4,6 +4,7 @@ import Section from "../../components/common/Section.astro";
 import ProjectSnippet from "../../components/ProjectSnippet.astro";
 import Layout from "../../layouts/Layout.astro";
 import { GLOBAL } from "../../lib/variables";
+import profileImage from "../../../public/profileImage.gif"
 ---
 
 <Layout>
@@ -18,7 +19,7 @@ import { GLOBAL } from "../../lib/variables";
       property="og:description"
       content={GLOBAL.projectShortDescription}
     />
-    <meta property="og:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta property="og:image" content={`${GLOBAL.rootUrl}/${profileImage}`} />
     <meta property="og:url" content={`${GLOBAL.rootUrl}/projects`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${GLOBAL.projectTitle} • ${GLOBAL.username}`} />
@@ -26,7 +27,7 @@ import { GLOBAL } from "../../lib/variables";
       name="twitter:description"
       content={GLOBAL.projectShortDescription}
     />
-    <meta name="twitter:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta name="twitter:image" content={`${GLOBAL.rootUrl}/${profileImage}`} />
     <meta http-equiv="content-language" content="en" />
     <meta name="language" content="English" />
     <link rel="canonical" href={`${GLOBAL.rootUrl}/projects`} />
